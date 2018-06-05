@@ -27,7 +27,7 @@ public class lru {
 	void set (int key, int value) {
 		Page page = cache.get(key);
 		if(page == null) {
-			//evict as needed
+			eviction();
 			page = new Page (key, value);
 			cache_vals.addLast(page);
 			cache.put(key,  page);
