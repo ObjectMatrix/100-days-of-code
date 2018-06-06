@@ -17,7 +17,7 @@ A Hash Map with page number as key and address of the corresponding page (list) 
 ```
 Algorithm:
 
-![LRU Flowchart](images/LRU.png)
+![LRU Flowchart](../images/LRU.png)
 
 ### Complexity 
 
