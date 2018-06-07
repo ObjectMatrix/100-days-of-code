@@ -7,12 +7,13 @@ This is important because it means that you can just pass the result of the recu
 You can always rewrite your tail recursive function as a loop—which are, presumably, guaranteed to run in constant space. Better yet, you can always switch to a language that *does* support proper tail calls 
 ```
 
-# Does `NodeJs` support `Tail Call` Optimization (TCO)?
+# Does NodeJs support Tail Call Optimization (TCO)?
+
 ```
 If not, it depends on what you’re doing and how much RAM your compute resource has. In Java, unless you’re using a performance limiting techniques like trampolining, Java will limit your program to a few thousand recursive calls.
 ```
 
-In `Node.JS` version 8 and later, TCO is not available. link https://node.green/
+In Node.JS version 8 and later, TCO is not available. link https://node.green/
 
 V8, the JavaScript engine in Chrome, had TCO support for a while, but it no longer does and as of this writing, there is no active development on TCO in V8, and none is planned. 
 
