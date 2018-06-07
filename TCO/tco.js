@@ -10,4 +10,5 @@ const recursive = (n, a) => {
   return n * a
 }
 let r  = fact(99999, 1)
+
 console.log(r)
